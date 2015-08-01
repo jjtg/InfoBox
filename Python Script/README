@@ -1,0 +1,7 @@
+For comments on the way the script works, please look at the python code itself. 
+
+Additional comments:
+
+1) This script uses the json library to access location and weather data. 
+2) For accessing news data it is currently using xml and parses the data. 
+3) Future releases will include websockets. 
