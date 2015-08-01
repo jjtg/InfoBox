@@ -1,0 +1,17 @@
+Comments on the code: 
+
+The code is currently lacking comment info, this will be added in future releases. 
+In short, it can be considered on 3 categories: 
+
+A) Serial communication - Located in the main loop; it handles the information being passed 
+down by the script and classifies it into either news data or weather data, an additional 
+character array can be added for warnings.
+
+B) Printing logic - displayMessage(); this deals with displaying the message on a 16 characters 
+by 2 LCD. It takes into consideration that the LCD display library handles 40 characters per line, 
+hiding everything in excess of 16 on the buffer. Therefore, this subroutine formats the text so 
+that it is displayed correctly. 
+
+C) Interrups - btnPress() & toggleDisplay(); these are interrupts for user input, they will 
+eventually stop any other code being served in favor of user input. Currently there is a bug 
+with displayMessage() and the interrups, so this will have to be fixed. 
